@@ -3,7 +3,7 @@ import { PrismaClient } from './prisma/.generated/index';
 const prisma = new PrismaClient();
 
 async function main() {
-  const number = 531.8 - 26.11;
+  const number = 0.10739236971565864;
 
   console.log({ number, processedNumber: JSON.parse(JSON.stringify(number)) });
   await prisma.test.deleteMany();
